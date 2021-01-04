@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Script related to Build modules will get called here'
                    sh "chmod +x -R ${env.WORKSPACE}"
-                   sh './Build/build.sh'
+                   sh 'python ./Build/build.py'
             }
         }
 
