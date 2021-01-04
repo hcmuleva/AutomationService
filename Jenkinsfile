@@ -1,55 +1,35 @@
 pipeline {
-
     agent any
-
     stages {
-
-        stage('Initialize') {
-
-            steps {
-
-                echo 'Initialize Stage  demo to Yogesh Kag'
-
-
-
-            }
-
-        }
-
         stage('Build') {
+            steps {
+                echo 'Script related to Build modules will get called here'
+                   sh "chmod +x -R ${env.WORKSPACE}"
+                   sh './Build/build.sh'
+            }
+        }
+
+        stage('Deployment') {
+            steps {
+                echo 'Script related to Deployment modules will get called here'
+            }
+
+        }
+
+         stage('Unit Test') {
 
             steps {
 
-                echo 'Build Stage'
-
-                sh "chmod +x -R ${env.WORKSPACE}"
-
-                sh './automationExecution.sh'
+                echo 'Unit Test Case module'
 
             }
 
         }
 
-
-
-         stage('Deploy') {
-
+         stage('Regression') {
             steps {
-
-                echo 'Deploy Stage'
-
+                echo 'Regression Module'
             }
-
-        }
-
-         stage('Monitor') {
-
-            steps {
-
-                echo 'Monitor Stage'
-
-            }
-
         }
 
     }
