@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Script related to Build modules will get called here'
-                   sh 'python  ./Build/build.py'
+                   bat 'python  ./Build/build.py'
             }
         }
 
