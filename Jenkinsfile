@@ -4,8 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Script related to Build modules will get called here'
-                   sh "chmod +x -R ${env.WORKSPACE}"
-                   sh 'python ./Build/build.py'
+                   sh 'python  ./Build/build.py'
             }
         }
 
