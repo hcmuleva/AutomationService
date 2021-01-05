@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Script related to Build modules will get called here'
-                   bat 'python  ./Build/build.py'
+                   bat '"C:\Users\Harish_Muleva\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7\python"  ./Build/build.py'
             }
         }
 
