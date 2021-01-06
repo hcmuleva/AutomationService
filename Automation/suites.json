@@ -1,0 +1,3 @@
+{"suite":"BVT", "TC": ["TC1", "TC2", "TC3", "TC4", "TC4", "TC5", "TC6", "TC7"]}
+{"suite":"REGRESSION", "TC": ["TC1", "TC2", "TC3", "TC4", "TC4", "TC5", "TC6", "TC7", "TC8", "TC9", "TC10", "TC11", "TC12", "TC13", "TC14", "TC15"]}
+{"suite":"UNIT", "TC": ["STC1", "STC2", "STC3", "STC4", "STC5"]}
