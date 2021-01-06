@@ -25,7 +25,7 @@ def run_testcases(TESTCASE):
     ### this is the place actual python code will be executed
     print("TestCase Executing ")
     print(f'TestCase: {TESTCASE} DeviceInfoIP: {device_config_json}')
-    sleep(randint(3, 10))  # Fake Sleep function to test functionality
+    sleep(randint(3, 5))  # Fake Sleep function to test functionality
     test_status = {'status':"Passed", "deviceInfo":device_config_json}
     # Step3. Put Ip back to ip pool
     submit_config_to_pool={"ip":device_config_json['ip'],"config":device_config_json["config"]}
