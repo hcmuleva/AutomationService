@@ -35,15 +35,13 @@ pipeline {
      stage('BVT') {
             steps {
                 echo 'BVT Test Case module'
-                 bat 'python  ./InfrastructureAsService/SparkDriver.py  --suite_name BVT --input_path C:\\Project\\AutomationService\\Automation\\suites.json --output_fil
-e_name HCM_OUTPUT --num_parallel_test 2'
+                 bat 'python  ./InfrastructureAsService/SparkDriver.py  --suite_name BVT --input_path C:\\Project\\AutomationService\\Automation\\suites.json --output_file_name HCM_OUTPUT --num_parallel_test 2'
             }
         }
         stage('Regression') {
             steps {
                 echo 'Regression Module'
-                 bat 'python  ./InfrastructureAsService/SparkDriver.py  --suite_name REGRESSION --input_path C:\\Project\\AutomationService\\Automation\\suites.json --output_fil
-e_name HCM_OUTPUT --num_parallel_test 2'
+                 bat 'python  ./InfrastructureAsService/SparkDriver.py  --suite_name REGRESSION --input_path C:\\Project\\AutomationService\\Automation\\suites.json --output_file_name HCM_OUTPUT --num_parallel_test 2'
             }
         }
       stage('Performance') {
