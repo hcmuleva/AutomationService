@@ -46,22 +46,17 @@ pipeline {
         }
       stage('Performance') {
             steps {
-                echo 'Performance Module1'
+                echo 'Performance Module'
                // bat 'python  ./CICD/Performance/Performance.py'
             }
         }
-        //  stage('Security') {
-            // steps {
-                // echo 'Security Module'
-                //bat 'python  ./CICD/Security/Security.py'
-            // }
-        // }
-         stage('HCMStage') {
+         stage('Security') {
             steps {
-                echo 'HCM Module started'
+                echo 'Security Module'
                 //bat 'python  ./CICD/Security/Security.py'
             }
-    }
+        }
+    
     }
 
 }
