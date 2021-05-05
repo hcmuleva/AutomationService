@@ -56,6 +56,13 @@ pipeline {
                 //bat 'python  ./CICD/Security/Security.py'
             }
         }
+
+          stage('Security1') {
+     steps {
+         echo 'Security Module11'
+         //bat 'python  ./CICD/Security/Security.py'
+     }
+ }
     
     }
 
