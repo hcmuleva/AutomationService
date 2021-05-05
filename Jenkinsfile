@@ -46,7 +46,7 @@ pipeline {
         }
       stage('Performance') {
             steps {
-                echo 'Performance Module'
+                echo 'Performance Module1'
                // bat 'python  ./CICD/Performance/Performance.py'
             }
         }
