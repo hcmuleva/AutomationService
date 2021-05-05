@@ -53,7 +53,7 @@ pipeline {
         //  stage('Security') {
             // steps {
                 // echo 'Security Module'
-                bat 'python  ./CICD/Security/Security.py'
+                //bat 'python  ./CICD/Security/Security.py'
             // }
         // }
          stage('HCMStage') {
