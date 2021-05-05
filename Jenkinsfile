@@ -56,7 +56,12 @@ pipeline {
                 //bat 'python  ./CICD/Security/Security.py'
             }
         }
-
+         stage('HCMStage') {
+            steps {
+                echo 'HCM Module started'
+                //bat 'python  ./CICD/Security/Security.py'
+            }
+        }
     }
 
 }
