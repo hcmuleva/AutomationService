@@ -50,18 +50,18 @@ pipeline {
                // bat 'python  ./CICD/Performance/Performance.py'
             }
         }
-        //  stage('Security') {
-            // steps {
-                // echo 'Security Module'
+         stage('Security') {
+            steps {
+                echo 'Security Module'
                 //bat 'python  ./CICD/Security/Security.py'
-            // }
-        // }
-        //  stage('HCMStage') {
-            // steps {
-                // echo 'HCM Module started'
-              //  bat 'python  ./CICD/Security/Security.py'
-            // }
-        // }
+            }
+        }
+         stage('HCMStage') {
+            steps {
+                echo 'HCM Module started'
+                //bat 'python  ./CICD/Security/Security.py'
+            }
+    }
     }
 
 }
